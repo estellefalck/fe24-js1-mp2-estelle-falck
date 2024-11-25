@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pig Dice Game</title>
+  <style>
+    body {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    #game-container {
+      display: none;
+      margin-top: 30px;
+    }
+    button {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    input {
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pig Dice Game</h1>
+
+  <div id="start-section">
+    <label for="player-name">Ditt namn:</label>
+    <input id="player-name" type="text" placeholder="Ange ditt namn">
+    <button id="start-game">Starta spelet</button>
+  </div>
+
+  <div id="game-container">
+    <p id="player-info"></p>
+    <p id="dice-number">Tärning: </p>
+    <p id="round-score">Omgångens poäng: 0</p>
+    <p id="total-score">Total poäng: 0</p>
+    <p id="rounds">Antal omgångar: 0</p>
+    <p id="message"></p>
+    <button id="roll-dice">Kasta tärningen</button>
+    <button id="freeze-points">Frys poäng</button>
+  </div>
+
+  <div id="game-over-message" style="display: none;">
+    <h2>Spelet är slut!</h2>
+    <p id="winner-message"></p>
+    <button id="restart-game">Starta om spelet</button>
+  </div>
+
+  <script src="pig-dice-game.js"></script>
+</body>
+</html>
